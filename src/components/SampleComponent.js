@@ -28,7 +28,7 @@ class SampleComponent extends Component {
 
   shouldComponentUpdate() {
     console.log("Should Component update");
-    return false;
+    return true;
   }
 
   componentWillUpdate() {
@@ -38,7 +38,7 @@ class SampleComponent extends Component {
   render() {
     return (
       <div>
-        Hello World from Sample Component Date {this.state.date}
+        {this.props.message} {this.props.name}, today's date is {this.state.date}
         {/* first time render with undefined */}
         {console.log("Render", this.state.date)}
       </div>

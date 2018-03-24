@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     return (
-        <SampleComponent  name='himanshu' message='welcome'/>
+        <SampleComponent  name='Himanshu' message='Welcome'/>
     );
   }
 }
